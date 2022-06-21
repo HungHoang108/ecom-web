@@ -1,5 +1,5 @@
 import './button.styles.scss'
 
-export const Button = ({children, buttonType})=>{
-    return <button className={`button-container ${buttonType}`}>{children}</button>
+export const Button = ({children, buttonType, ...otherProps})=>{
+    return <button className={`button-container ${buttonType}`} {...otherProps}>{children}</button>
 }
