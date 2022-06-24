@@ -1,4 +1,3 @@
-import { async } from "@firebase/util";
 import { useState } from "react";
 import { createAuthUserWithEmailAndPassword, createUserDocumentFromAuth } from "../../utils/firebase/firebase.utils";
 import { FormInput } from "../form-input/form-input.component";
@@ -16,7 +15,6 @@ const SignUp = () => {
 
     const handleChange = (event) =>{
         const {name, value} = event.target;
-        console.log(formField)
         
         setFormField((prev) =>{
             return {
@@ -35,7 +33,7 @@ const SignUp = () => {
 
         try {
             const {user} = await createAuthUserWithEmailAndPassword (email, password);
-            const newUserDoc= await createUserDocumentFromAuth(user, {displayName})
+            await createUserDocumentFromAuth(user, {displayName})
         }catch(error) {
             console.log(error)
         }
@@ -45,9 +43,7 @@ const SignUp = () => {
             email: "",
             password: "",
             confirmedPassword: ""
-        })
-
-        
+        })   
     }
 
     return (
