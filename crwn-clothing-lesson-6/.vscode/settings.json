@@ -1,0 +1,9 @@
+{
+    "json.schemas": [
+    
+    ],
+    "editor.tokenColorCustomizations": {
+        
+            "comments": "#dfe618"
+        }
+    }
