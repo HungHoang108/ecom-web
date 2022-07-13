@@ -1,7 +1,7 @@
 # ecom-web
 The project is build based on Udemy Course: Complete React Developer in 2022 (w/ Redux, Hooks, GraphQL) by Andrei Neagoie.
 
-The app is build using ReactJs for fron-end and Firestore for back-end. 
+Front-End: ReactJs and back-end: Firebase
 
 Main take-away from the project: 
 - Using components wisely for a big project
