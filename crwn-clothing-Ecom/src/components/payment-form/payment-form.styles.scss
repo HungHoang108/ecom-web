@@ -1,0 +1,13 @@
+.payment-form-box {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .payment-form-form {
+        height: 100px;
+        min-width: 300px;
+    }
+}
+
