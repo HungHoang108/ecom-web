@@ -7,7 +7,6 @@ import { selectCartCount, selectIsCartOpen } from '../../store/cart/cart.selecto
 import './cart-icon.styles.scss'
 
 const CartIcon = ()=>{
-    // const {isCartOpen, setIsCartOpen, cartCount} = useContext(CartContext)
     const dispatch = useDispatch()
 
     const cartCount = useSelector(selectCartCount)

@@ -9,8 +9,6 @@ export const CheckOutItem =({cartItem})=> {
     const {name, imageUrl, price, quantity} = cartItem;
     const cartItems = useSelector(selectCartItems)
     const dispatch = useDispatch()
-
-    // const {removeItemToCart, addItemToCart, decrementItemNumber} = useContext(CartContext)
     
 
     const clearItemHandler = ()=> dispatch(removeItemToCart(cartItems,cartItem))
