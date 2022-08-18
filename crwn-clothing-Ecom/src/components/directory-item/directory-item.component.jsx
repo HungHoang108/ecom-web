@@ -4,7 +4,7 @@ import './directory-item.styles.scss';
 const DirectoryItem = ({ category }) => {
   const { imageUrl, title } = category;
   return (
-    // <Link></Link>
+    
     <Link to={`shop/${title.toLowerCase()}`} className='directory-item-container'>
       <div
         className='background-image'
@@ -17,6 +17,7 @@ const DirectoryItem = ({ category }) => {
         <p>Shop Now</p>
       </div>
     </Link>
+    
   );
 };
 
